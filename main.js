@@ -24,7 +24,7 @@ function init() {
         console.log(masterCadeList.magiaeria)  
     })
 
-    canvas = document.getElementById("canvas")
+    canvas = document.querySelector("canvas")
 
     
     
