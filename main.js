@@ -32,3 +32,5 @@ board = [null,null,null,null,null,
 
 console.log(board)
 
+
+
