@@ -7,6 +7,7 @@ window.addEventListener("DOMContetLoaded" , init)
 let masterCadeList = {"chara":[], "magiaeria":[]}
 window.addEventListener("DOMContentLoaded",init)
 
+//カードをマスターリストに
 function init() {
     csvonloadC(function () {
 
@@ -19,12 +20,15 @@ function init() {
     
     
 }
+
+//ボードの初期状態
 board = [null,null,null,null,null,
-    null,null,null,null,null,
-    null,null,null,null,null,
-    null,null,null,null,null,
-    null,null,null,null,null]
+        null,null,null,null,null,
+        null,null,null,null,null,
+        null,null,null,null,null,
+        null,null,null,null,null]
 
 
 
 console.log(board)
+
