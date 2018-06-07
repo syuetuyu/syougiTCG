@@ -2,12 +2,18 @@
 
 var board =[]
 
+let cardSaiz = {
+    x:90,
+    y:120
+
+}
+
 window.addEventListener("DOMContetLoaded" , init)
 
 let masterCadeList = {"chara":[], "magiaeria":[]}
 window.addEventListener("DOMContentLoaded",init)
 
-//カードをマスターリストに
+//カードデータをマスターリストに
 function init() {
     csvonloadC(function () {
 
@@ -17,6 +23,9 @@ function init() {
 
         console.log(masterCadeList.magiaeria)  
     })
+
+    canvas = document.getElementById("canvas")
+
     
     
 }
