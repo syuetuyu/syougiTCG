@@ -17,7 +17,7 @@ function csvonloadME(load) {
             "imag": cardData[6]
         }
         if (card["id"] != "") {
-            masterCadeList.magiaeria[cardData[0]] = card
+            masterCardList.magiaeria[cardData[0]] = card
         }
         })
     }).then(function(){
@@ -52,7 +52,7 @@ function csvonloadC(load) {
                 "imgname": cardData[12],
             }
             if (card["id"] != "") {
-                masterCadeList.chara[cardData[0]] = card
+                masterCardList.chara[cardData[0]] = card
             }
         })
     }).then(function () {
