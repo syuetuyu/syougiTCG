@@ -22,7 +22,8 @@ function init() {
     //カードデータをマスターに登録
     csvonloadC(function () {
         csvonloadME(function () {
-
+            console.log(masterCadeList);
+            
         })
     })
 }

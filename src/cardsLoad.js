@@ -1,5 +1,5 @@
 function csvonloadME(load) {
-    fetch("cardslist-magia-eria.csv").then(response => {
+    fetch("csv/cardslist-magia-eria.csv").then(response => {
         return response.text()
     }).then(csv =>{
         const cardslist = csv.split("\n")
@@ -26,7 +26,7 @@ function csvonloadME(load) {
 }
 
 function csvonloadC(load) {
-    fetch("cardlist-chara.csv").then(response => {
+    fetch("csv/cardlist-chara.csv").then(response => {
         return response.text()
     }).then(csv => {
         const cardslist = csv.split("\n")
