@@ -25,10 +25,9 @@ function init() {
 
     csvonload(function () { 
         csvmagia(function () {
-            console.log(masterCadeList)
-            
             //読み込み完了
-            //クリック処理
+
+            //クリック処理の登録
             canvas.addEventListener("click", mouse)
             //ゲームスタート
             requestAnimationFrame(updata)
