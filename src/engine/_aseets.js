@@ -92,8 +92,9 @@ Asset.loadSound = function (asset , onload) {
     }).then(sound => {
         Audio.ctx.decodeAudioData(sound,buffer => {
             Asset.sounds[asset.name] = buffer
-            onload()
         })
+    }).then(function(){
+        onload()
     })
     
 }
@@ -148,8 +149,8 @@ Asset.loadByTags = function(tags, onload){
          Asset.load(asset.name,function(){
              return
         })
-        onload()
     })
+    onload()
  }
 
 /**
